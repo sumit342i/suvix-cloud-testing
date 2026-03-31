@@ -1,0 +1,11 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": null,
+  "devCommand": "npm start",
+  "outputDirectory": "frontend",
+  "functions": {
+    "api/orders.js": {
+      "maxDuration": 30
+    }
+  }
+}
