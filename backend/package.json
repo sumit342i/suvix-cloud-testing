@@ -1,0 +1,16 @@
+{
+  "name": "rn-herbal-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Node/Nodemailer backend for RN Herbal India orders",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node src/server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "nodemailer": "^6.9.16"
+  }
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Order Form - RN Herbal India</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700;800&family=Noto+Serif+Devanagari:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body class="order-page">
+    <header class="fixed-header">
+        <div class="logo">
+            <a href="https://rnherbalindia.com/">
+                <img src="./assets/images/ChatGPT Image Mar 26, 2026, 01_58_45 PM (1).png" alt="Logo" height="62">
+            </a>
+        </div>
+        <div class="header-title">
+            <h1>Order Menu</h1>
+        </div>
+        <div class="header-contact">
+            <a href="tel:+918292905500" class="call-btn">
+                <i class="fa-solid fa-phone"></i> Call Now
+            </a>
+        </div>
+    </header>
+
+    <main class="content-area">
+        <section class="order-form-section">
+            <div class="checkout-heading reveal">
+                <span class="checkout-kicker">Trusted Checkout</span>
+                <h2>Secure Checkout</h2>
+                <p class="checkout-subtitle">Fill in your details below to complete your order quickly and securely. Our
+                    team will confirm and process it for you after submission.</p>
+            </div>
+
+            <div class="product-summary reveal">
+                <div class="product-image-container">
+                    <img src="./assets/images/WhatsApp Image 2026-03-26 at 9.15.36 PM.jpeg" alt="RN Herbal RN Power Combo" class="product-image">
+                </div>
+                <div class="product-details">
+                    <h3 class="product-name summary-name">RN Herbal RN Power Combo</h3>
+                    <p class="product-description">100% Ayurvedic advanced herbal formulation. Helps improve strength,
+                        stamina, testosterone support, and vitality. Specially formulated for male performance, energy,
+                        and overall wellness.</p>
+                    <div class="pricing summary-pricing">
+                        <span class="original-price">&#8377;6000</span>
+                        <span class="discounted-price">&#8377;3000</span>
+                        <span class="discount-badge">50% OFF</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="orderStatus" class="status-card">
+                <i class="fas fa-check-circle status-icon"></i>
+                <h3 class="status-title">Order Placed Successfully!</h3>
+                <p class="status-text">Thank you for your order. We have sent a confirmation email to your provided
+                    address. Our dispatch team will process your order shortly.</p>
+                <a href="index.html" class="status-link">Return to Home</a>
+            </div>
+
+            <form id="orderForm" class="order-form reveal">
+                <h3 class="form-title"><i class="fas fa-user-circle"></i> Customer Details</h3>
+
+                <div class="form-row">
+                    <div class="form-group split-field">
+                        <label for="name"><i class="fas fa-user"></i> Full Name *</label>
+                        <input type="text" id="name" name="Name" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-group split-field">
+                        <label for="phone"><i class="fas fa-phone"></i> Mobile Number *</label>
+                        <input type="tel" id="phone" name="Phone" placeholder="10-digit mobile number" pattern="[0-9]{10}"
+                            title="Please enter a valid 10-digit mobile number" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email"><i class="fas fa-envelope"></i> Email Address *</label>
+                    <input type="email" id="email" name="email" placeholder="Your email address" required>
+                    <small class="field-note"><i class="fas fa-info-circle"></i> Order confirmation tracking will be sent
+                        to this email automatically.</small>
+                </div>
+
+                <h3 class="form-title"><i class="fas fa-truck"></i> Shipping Details</h3>
+
+                <div class="form-group">
+                    <label for="address"><i class="fas fa-map-marker-alt"></i> Complete Delivery Address *</label>
+                    <textarea id="address" name="Address" placeholder="House/Flat No., Building Name, Street, Locality/Area"
+                        rows="3" required></textarea>
+                </div>
+
+                <div class="form-row form-row-wrap">
+                    <div class="form-group split-field compact-field">
+                        <label for="city"><i class="fas fa-city"></i> City / Town *</label>
+                        <input type="text" id="city" name="City" placeholder="Enter city" required>
+                    </div>
+                    <div class="form-group split-field compact-field">
+                        <label for="state"><i class="fas fa-map"></i> State *</label>
+                        <input type="text" id="state" name="State" placeholder="Enter state" required>
+                    </div>
+                    <div class="form-group split-field compact-field">
+                        <label for="pincode"><i class="fas fa-map-pin"></i> Pincode *</label>
+                        <input type="text" id="pincode" name="Pincode" placeholder="6-digit Pincode" pattern="[0-9]{6}"
+                            title="Please enter a valid 6-digit pincode" required>
+                    </div>
+                </div>
+
+                <h3 class="form-title"><i class="fas fa-file-invoice-dollar"></i> Payment Summary</h3>
+
+                <div class="form-group">
+                    <label>Selected Product</label>
+                    <input type="text" name="Product_Selected" value="RN Power Combo (Quantity: 1)" readonly
+                        class="readonly-input">
+                </div>
+
+                <div class="form-group">
+                    <label>Payment Method</label>
+                    <div class="cod-box">
+                        <i class="fas fa-money-bill-wave"></i>
+                        <span>Cash on Delivery (COD)</span>
+                        <input type="hidden" name="Payment_Method" value="Cash on Delivery (COD) - Amount Expected: &#8377;3000">
+                    </div>
+                </div>
+
+                <button type="submit" id="submitButton" class="order-btn checkout-submit">
+                    <i class="fas fa-check-circle"></i> PLACE ORDER NOW (&#8377;3000)
+                </button>
+                <p class="secure-note">
+                    <i class="fas fa-lock"></i> SSL Secured Checkout. Your details are safe with us.
+                </p>
+            </form>
+        </section>
+
+        <a href="https://wa.me/917260835447" target="_blank" class="whatsapp-float btn1">
+            <img src="./assets/images/vecteezy_whatsapp-logo-png-whatsapp-icon-png-whatsapp-transparent_18930748.png" alt="WhatsApp">
+        </a>
+
+        <a href="https://wa.me/917260044413" target="_blank" class="whatsapp-float btn2">
+            <img src="./assets/images/vecteezy_whatsapp-logo-png-whatsapp-icon-png-whatsapp-transparent_18930748.png" alt="WhatsApp">
+        </a>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/order.js"></script>
+</body>
+
+</html>
