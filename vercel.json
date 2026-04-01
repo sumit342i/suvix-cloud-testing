@@ -7,7 +7,7 @@
   },
   "functions": {
     "backend/src/server.js": {
-      "runtime": "nodejs18.x"
+      "runtime": "nodejs"
     }
   },
   "routes": [
