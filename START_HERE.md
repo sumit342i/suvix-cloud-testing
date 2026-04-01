@@ -61,7 +61,7 @@ git init
 git add .
 git commit -m "Initial commit - order form with email"
 git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/rn-herbal-order-form.git
+git remote add origin https://github.com/shivamkr2230-boop/sumit-testing.git
 git push -u origin main
 ```
 
