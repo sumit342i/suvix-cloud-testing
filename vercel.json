@@ -3,7 +3,6 @@
   "buildCommand": "npm install --prefix backend",
   "installCommand": "npm install --prefix backend",
   "env": {
-    "FRONTEND_URL": "@frontend_url",
     "PORT": "3000"
   },
   "functions": {

@@ -118,15 +118,14 @@ RN Herbal India <digital.work.3442@gmail.com>
 ORDER_NOTIFICATION_EMAIL
 digital.work.3442@gmail.com
 
-FRONTEND_URL
-[LEAVE EMPTY FOR NOW]
-
 NODE_ENV
 production
 
 PORT
 3000
 ```
+
+**NOTE**: Do NOT add `FRONTEND_URL` - leave it out completely. It's only needed if you deploy frontend and backend separately.
 
 #### 3d. Redeploy with Variables
 1. Click **"Deployments"** tab
