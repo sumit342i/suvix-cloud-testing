@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "buildCommand": "npm install --prefix backend",
+  "installCommand": "npm install --prefix backend",
+  "env": {
+    "FRONTEND_URL": "@frontend_url",
+    "PORT": "3000"
+  },
+  "functions": {
+    "backend/src/server.js": {
+      "runtime": "nodejs18.x"
+    }
+  },
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "backend/src/server.js",
+      "methods": ["GET", "POST", "OPTIONS"]
+    },
+    {
+      "src": "/(.*)",
+      "dest": "backend/src/server.js"
+    }
+  ]
+}
